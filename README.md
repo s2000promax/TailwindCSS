@@ -1,2 +1,2 @@
 # TailwindCSS
-Tailwind framework
+TailwindCSS framework
