@@ -1,0 +1,23 @@
+{
+  "name": "tailwindcss",
+  "version": "1.0.0",
+  "description": "TailwindCSS framework",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss build -i src/main.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s2000promax/TailwindCSS.git"
+  },
+  "author": "Stan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s2000promax/TailwindCSS/issues"
+  },
+  "homepage": "https://github.com/s2000promax/TailwindCSS#readme",
+  "devDependencies": {
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
+  }
+}
