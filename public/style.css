@@ -524,6 +524,9 @@ video {
   padding-right: 0.75rem;
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 .pagination-item:hover {
@@ -541,10 +544,6 @@ video {
   position: relative;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -553,16 +552,20 @@ video {
   top: 0px;
 }
 
-.z-20 {
-  z-index: 20;
+.bottom-0 {
+  bottom: 0px;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .z-0 {
   z-index: 0;
 }
 
-.z-10 {
-  z-index: 10;
+.z-20 {
+  z-index: 20;
 }
 
 .mx-auto {
@@ -586,10 +589,6 @@ video {
 
 .mb-10 {
   margin-bottom: 2.5rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .mb-2 {
@@ -622,6 +621,10 @@ video {
 
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .block {
@@ -664,16 +667,20 @@ video {
   height: 24rem;
 }
 
-.h-7 {
-  height: 1.75rem;
-}
-
 .h-full {
   height: 100%;
 }
 
 .h-48 {
   height: 12rem;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .w-6 {
@@ -696,12 +703,16 @@ video {
   width: 1.75rem;
 }
 
-.w-48 {
-  width: 12rem;
+.w-10 {
+  width: 2.5rem;
 }
 
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -730,6 +741,10 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-l-lg {
@@ -806,6 +821,12 @@ video {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
+.from-black\/10 {
+  --tw-gradient-from: rgb(0 0 0 / 0.1);
+  --tw-gradient-to: rgb(0 0 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-green-500 {
   --tw-gradient-from: #22c55e;
   --tw-gradient-to: rgb(34 197 94 / 0);
@@ -830,10 +851,8 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-black\/10 {
-  --tw-gradient-from: rgb(0 0 0 / 0.1);
-  --tw-gradient-to: rgb(0 0 0 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+.to-black\/70 {
+  --tw-gradient-to: rgb(0 0 0 / 0.7);
 }
 
 .to-green-700 {
@@ -846,10 +865,6 @@ video {
 
 .to-orange-700 {
   --tw-gradient-to: #c2410c;
-}
-
-.to-black\/70 {
-  --tw-gradient-to: rgb(0 0 0 / 0.7);
 }
 
 .object-cover {
@@ -910,6 +925,16 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -966,8 +991,28 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .opacity-80 {
   opacity: 0.8;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .header-link {
@@ -981,6 +1026,9 @@ video {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 .header-link:hover {
@@ -1002,6 +1050,9 @@ video {
   padding-right: 0.75rem;
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 .header-button:hover {
@@ -1029,6 +1080,9 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity));
   text-decoration-color: #374151;
   text-underline-offset: 2px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 .footer-link:hover {
@@ -1124,12 +1178,12 @@ video {
     width: 33.333333%;
   }
 
-  .lg\:w-full {
-    width: 100%;
-  }
-
   .lg\:w-48 {
     width: 12rem;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
